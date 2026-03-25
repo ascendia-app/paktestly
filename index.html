@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paktestly - Academic Entry Test Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #2d3748; background: #fafbfc; }
+        header { background: #1a365d; color: white; padding: 1.2rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        nav h1 { font-family: 'Crimson Text', serif; font-size: 1.9rem; font-weight: 700; letter-spacing: 0.5px; }
+        nav ul { list-style: none; display: flex; gap: 2.5rem; }
+        nav a { color: white; text-decoration: none; font-weight: 500; transition: opacity 0.3s; font-family: 'Lora', serif; font-size: 1rem; }
+        nav a:hover { opacity: 0.9; }
+        main { margin-top: 100px; max-width: 1200px; margin-left: auto; margin-right: auto; padding: 2rem 1rem; }
+        .hero { text-align: center; padding: 5rem 3rem; background: white; border-radius: 8px; margin-bottom: 4rem; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-top: 4px solid #1a365d; border-bottom: 1px solid #e2e8f0; }
+        .hero h2 { font-family: 'Crimson Text', serif; font-size: 2.8rem; color: #1a365d; margin-bottom: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+        .hero p { font-size: 1.25rem; color: #4a5568; max-width: 750px; margin: 0 auto; font-weight: 400; font-style: italic; }
+        .directory { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 2.5rem; }
+        .card { background: white; border-radius: 8px; padding: 2.5rem; box-shadow: 0 4px 16px rgba(0,0,0,0.05); transition: box-shadow 0.3s; border-left: 5px solid #1a365d; border-bottom: 1px solid #f1f5f9; }
+        .card:hover { box-shadow: 0 8px 32px rgba(26,54,93,0.12); }
+        .card h3 { color: #1a365d; font-family: 'Crimson Text', serif; font-size: 1.7rem; margin-bottom: 1.2rem; font-weight: 600; }
+        .card ul { list-style: none; }
+        .card li { margin-bottom: 1.2rem; padding-left: 1rem; position: relative; }
+        .card li::before { content: '▸'; color: #1a365d; font-weight: bold; position: absolute; left: 0; }
+        .card a { color: #1a365d; text-decoration: none; font-weight: 500; font-family: 'Lora', serif; border-bottom: 1px solid transparent; transition: border-bottom 0.3s; }
+        .card a:hover { border-bottom: 1px solid #1a365d; }
+        .search { margin-bottom: 3rem; text-align: center; }
+        .search input { padding: 1.2rem 2rem; font-size: 1.1rem; border: 2px solid #e2e8f0; border-radius: 8px; width: 350px; max-width: 90%; outline: none; font-family: 'Lora', serif; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .search input:focus { border-color: #1a365d; box-shadow: 0 0 0 3px rgba(26,54,93,0.1); }
+        @media (max-width: 768px) { .hero h2 { font-size: 2.2rem; } nav ul { flex-direction: column; gap: 1.2rem; padding-top: 1rem; } nav { padding: 1rem 2rem; flex-direction: column; gap: 1rem; } .directory { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Paktestly</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#directory">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <h2>Academic Entry Test Resources</h2>
+            <p>Comprehensive preparation materials for NUST NET, FAST NUCES entry tests, and other Pakistani university admissions. Scholarly guides and official resources to support your academic journey.</p>
+        </section>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search resources (e.g., NUST NET syllabus, FAST pattern)...">
+        </div>
+        <section id="directory" class="directory">
+            <div class="card" data-tags="nust net">
+                <h3>NUST Entry Test (NET)</h3>
+                <ul>
+                    <li><a href="https://dogar.com.pk/nust-net-nust-entry-test-complete-guide/" target="_blank">Dogar Brothers Complete Guide</a></li>
+                    <li><a href="https://www.topgrade.pk/net-entry-test" target="_blank">TopGrade.pk Preparation Platform</a></li>
+                    <li><a href="https://nust.edu.pk/faqs/can-i-get-some-sample-test-papers-of-nust-entry-test/" target="_blank">Official NUST Sample Papers</a></li>
+                    <li><a href="https://www.aneeshussain.com/nust-2/" target="_blank">Anees Hussain Institute Notes</a></li>
+                </ul>
+            </div>
+            <div class="card" data-tags="fast sat">
+                <h3>FAST-NUCES Entry Test</h3>
+                <ul>
+                    <li><a href="https://www.nu.edu.pk/Admissions/TestPattern" target="_blank">Official Test Pattern & Syllabus</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=3jb5lLqXIoM" target="_blank">Past Paper Analysis (Video)</a></li>
+                    <li><a href="https://www.out-class.org/blogs/fact-nuces-admission-tips" target="_blank">Strategic Admission Guidance</a></li>
+                    <li><a href="https://step.pgc.edu/course/nust/" target="_blank">PGC STEP Preparation Course</a></li>
+                </ul>
+            </div>
+            <div class="card" data-tags="general">
+                <h3>Supplementary Materials</h3>
+                <ul>
+                    <li><a href="https://megalecture.com/nust-entrance-test-notes-worksheets/" target="_blank">MegaLecture Worksheets & Notes</a></li>
+                    <li><a href="https://www.scribd.com/document/882548606/FAst-By-Mtk" target="_blank">FAST Entry Test Notes</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const cards = document.querySelectorAll('.card');
+        searchInput.addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase().trim();
+            cards.forEach(card => {
+                const tags = card.dataset.tags.toLowerCase();
+                const text = card.textContent.toLowerCase();
+                card.style.display = (term === '' || tags.includes(term) || text.includes(term)) ? 'block' : 'none';
+            });
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
