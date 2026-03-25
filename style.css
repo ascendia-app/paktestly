@@ -1,0 +1,157 @@
+:root {
+    --pak-blue: #002366;
+    --pak-light-blue: #f0f4f8;
+    --pak-border: #002366;
+    --text-color: #1a1a1a;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background-color: var(--white);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* Header & Branding */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%;
+    border-bottom: 4px solid var(--pak-blue);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--pak-blue);
+    letter-spacing: 2px;
+}
+
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    color: var(--pak-blue);
+    text-decoration: underline;
+}
+
+/* Layout Container */
+main {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+.page-title {
+    margin-bottom: 50px;
+    border-left: 10px solid var(--pak-blue);
+    padding-left: 25px;
+}
+
+.page-title h1 {
+    font-size: 2.8rem;
+    color: var(--pak-blue);
+    margin-bottom: 5px;
+}
+
+/* Grid System */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+/* Database Card Aesthetic */
+.card {
+    border: 1px solid var(--pak-border);
+    padding: 30px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card:hover {
+    background-color: var(--pak-light-blue);
+    outline: 2px solid var(--pak-blue);
+}
+
+.card-tag {
+    font-family: Arial, sans-serif; /* Small sans-serif for UI labels */
+    font-size: 0.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--pak-blue);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: var(--pak-blue);
+}
+
+.card-description {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+/* Link as a "Button" */
+.card-link {
+    margin-top: auto;
+    text-decoration: none;
+    color: var(--pak-blue);
+    font-weight: bold;
+    border: 2px solid var(--pak-blue);
+    padding: 10px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.card-link:hover {
+    background-color: var(--pak-blue);
+    color: var(--white);
+}
+/* Database List Styling */
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card li {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* The shifting motion */
+}
+
+.card li a {
+    text-decoration: none;
+    color: var(--text-dim); /* Dull grey-white */
+    display: inline-block;
+    width: 100%;
+    transition: color 0.3s ease; /* The blue transition */
+}
+
+/* THE INTERACTION */
+.card li:hover {
+    transform: translateX(10px); /* Shift right */
+}
+
+.card li:hover a {
+    color: var(--accent-blue) !important; /* Turn blue */
+}
